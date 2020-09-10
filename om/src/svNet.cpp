@@ -30,6 +30,8 @@ svNet::tdriveMap svNet::driveStrengthMap_ = {
 
 svNet::svNet(const svDeclBase& b, const eNetType e)
     : svDeclBase(b)
+    , _strengthItem0(UNSET_STRENGTH)
+    , _strengthItem1(UNSET_STRENGTH)
     , netType_(e)
 {
 setDeclBaseType(NET); 
@@ -39,7 +41,7 @@ setDeclBaseType(NET);
 void svNet::decompile(std::ostream& os) const
 {
     os << opMap_[netType_] << " ";
-    if (_strengthItem0 && _strengthItem1) 
+    if (_strengthItem0 !=  UNSET_STRENGTH  && _strengthItem1 != UNSET_STRENGTH ) 
     {
       os << "( " << driveStrengthMap_[_strengthItem0] << " , " 
 	      << driveStrengthMap_[_strengthItem1] << " ) ";
