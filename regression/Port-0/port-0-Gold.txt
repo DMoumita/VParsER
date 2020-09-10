@@ -1,0 +1,6 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "port-0.sv"
+module M(a); 
+ERROR ::a is not declared as input or output or inout

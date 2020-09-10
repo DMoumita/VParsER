@@ -1,0 +1,11 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "port-1.sv"
+module M(a, b, c); 
+input a;
+output b;
+input c;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

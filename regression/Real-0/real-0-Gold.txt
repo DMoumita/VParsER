@@ -1,0 +1,18 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "real-0.sv"
+module M; 
+real  a;
+real  b;
+real  x = 1;
+real  y = 2;
+real  x1[1:0];
+real  y1[2:1];
+real  xx1[1:0];
+real  yy1;
+real  z1[3:0];
+real  p = 2;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

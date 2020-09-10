@@ -1,0 +1,12 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "always-simple-1.sv"
+module adder(out, in); 
+output reg   out;
+input in;
+always @(in)
+out = in;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

@@ -1,0 +1,14 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "contAssgn-4.sv"
+module adder(sum_out, carry_out, carry_in, ina, inb); 
+output wire  [3:0] sum_out;
+output wire carry_out;
+input wire carry_in;
+input wire  [3:0] ina;
+input wire  [3:0] inb;
+assign {carry_out, sum_out} = ((ina + inb) + carry_in);
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

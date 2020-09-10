@@ -1,0 +1,16 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "always-simple-5.sv"
+module adder(out, in, clk); 
+output reg   out;
+input in;
+input clk;
+always @(posedge clk or negedge in)
+begin
+out = in;
+
+end
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

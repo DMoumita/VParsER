@@ -1,0 +1,20 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "nb4.sv"
+module main(i, clock); 
+input i;
+input clock;
+reg [2:0] x;
+reg [2:0] b0;
+reg [2:0] b1;
+always @(posedge clock)
+begin
+b0 <= x;
+
+b1 <= b0;
+
+end
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

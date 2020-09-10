@@ -1,0 +1,18 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "time-0.sv"
+module M; 
+time  a;
+time  b;
+time  x = 1;
+time  y = 2;
+time  x1[1:0];
+time  y1[2:1];
+time  xx1[1:0];
+time  yy1;
+time  z1[3:0];
+time  p = 2;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

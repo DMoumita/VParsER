@@ -1,0 +1,10 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "module-3.sv"
+module M; 
+reg [1:0] a;
+reg [1:0] b = 1;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

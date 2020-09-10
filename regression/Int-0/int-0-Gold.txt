@@ -1,0 +1,18 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "int-0.sv"
+module M; 
+integer  a;
+integer  b;
+integer  x = 1;
+integer  y = 2;
+integer  x1[1:0];
+integer  y1[2:1];
+integer  xx1[1:0];
+integer  yy1;
+integer  z1[3:0];
+integer  p = 2;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

@@ -1,0 +1,32 @@
+
+           CHEETAH, System Verilog Analyzer, Version 5.1.37.b
+        Last compiled on Mon Jul 18 18:52:07 IST 2011
+
+ All Rights Reserved. Use, disclosure or duplication without 
+   prior written permission of Interra Systems, Inc. is prohibited.
+
+ For technical support send email to  cheetah_support@interrasystems.com
+                   or call (408) 873-1212
+
+INFO[001] Analyzing source file "a.v" ....
+
+INFO[004] FILE a.v LINE 1 Analyzing module ( m ).
+
+ERROR[481] FILE a.v LINE 46 Syntax error near ( ( ).
+
+  uwire signed( <-  [ Expected Token(s): `IDENTIFIER' ]
+
+ERROR[481] FILE a.v LINE 47 Syntax error near ( ( ).
+
+  uwire vectored ( <-  [ Expected Token(s): `'['' ]
+
+ERROR[481] FILE a.v LINE 47 Syntax error near ( , ).
+
+  uwire vectored ( supply1 , <-
+
+ERROR[481] FILE a.v LINE 48 Syntax error near ( ( ).
+
+  uwire scalared signed( <-  [ Expected Token(s): `'['' ]
+
+INFO[025] 4 error(s)   0 warning(s).
+

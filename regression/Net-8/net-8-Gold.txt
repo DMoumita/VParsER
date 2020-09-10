@@ -1,0 +1,22 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "net-8.sv"
+module m; 
+trior  w1;
+trior signed w7;
+trior  w11[2:0];
+trior signed w9[2:0];
+trior  wm21;
+trior  w211[3:0];
+trior  w4;
+trior  w281[4:0];
+trior  w21[9:3];
+trior signed n1;
+trior signed n2[3:0];
+trior signed n3;
+trior vectored [4:0] n5[2:0];
+trior scalared signed[4:0] nw9[2:0];
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

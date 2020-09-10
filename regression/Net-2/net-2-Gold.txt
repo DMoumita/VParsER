@@ -1,0 +1,22 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "net-2.sv"
+module m; 
+wor  w1;
+wor signed w7;
+wor  w11[2:0];
+wor signed w9[2:0];
+wor  wm21;
+wor  w211[3:0];
+wor  w4;
+wor  w281[4:0];
+wor  w21[9:3];
+wor signed n1;
+wor signed n2[3:0];
+wor signed n3;
+wor vectored [4:0] n5[2:0];
+wor scalared signed[4:0] nw9[2:0];
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

@@ -1,0 +1,9 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "contAssgn-2.sv"
+module M; 
+wire ( strong1 , pull0 )  w1 = 1'b1;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

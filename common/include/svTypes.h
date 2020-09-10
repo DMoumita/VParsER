@@ -1,0 +1,59 @@
+#pragma once
+
+#define VERSION "v0.1.01"
+
+#include <svLogger.h>
+
+enum quad { TRUE, FALSE, HiIMPED, UNDEF};
+
+typedef enum  {     
+	UNSET_STRENGTH,   
+	SUPPLY_0,    
+	SUPPLY_1,   
+	STRONG_0,    
+	STRONG_1,    
+	PULL_0,    
+	PULL_1,   
+	WEAK_0,       
+	WEAK_1,      
+	HIGHZ_0,    
+	HIGHZ_1      
+} svDriveStrengthType;  
+
+typedef enum {
+	WIRE,
+	UWIRE,
+	WORNET,
+	WANDNET,
+	SUPPLY_0NET,
+	SUPPLY_1NET,
+	TRINET,
+	TRI0NET,
+	TRI1NET,
+	TRIANDNET,
+	TRIORNET,
+	TRIREG,
+	UNDEFINE
+} eNetType;
+
+
+typedef enum {
+	WIRE_PORT,
+	UWIRE_PORT,
+	WORNET_PORT,
+	WANDNET_PORT,
+	SUPPLY_0NET_PORT,
+	SUPPLY_1NET_PORT,
+	TRINET_PORT,
+	TRI0NET_PORT,
+	TRI1NET_PORT,
+	TRIANDNET_PORT,
+	TRIORNET_PORT,
+	TRIREG_PORT,
+	UNDEFINE_PORT,
+	REG_PORT,
+	TIME_PORT,
+	INTEGER_PORT,
+	IMPLICIT_PORT
+} ePortType;
+

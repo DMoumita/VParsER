@@ -1,0 +1,22 @@
+This file will describe what the test case does and will contain the following
+attributes:
+
+Testcase Name
+=============
+Always-0
+
+Testcase Description
+====================
+This test case is for to check simple always.
+
+Positive or Negative
+====================
+Positive
+
+Expected Result
+===============
+
+
+Comments (optional)
+===================
+This is an optional section to describe further about the testcase, if any.

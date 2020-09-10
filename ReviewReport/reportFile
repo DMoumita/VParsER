@@ -1,0 +1,26 @@
+Regression report (PASS / FAIL) did not contain BitVector testcases (was not running earlier) since 
+your regression script expects files with .sv extension only
+
+
+BitVector-0: No error from Cheetah, vper produces error
+NegNet-1: No error from Cheetah, vper produces error
+NegReg-2: No error from Cheetah, vper produces error
+
+
+Regression Failures: Gold files updated for the following:
+   1) ContAssgn-2/contAssgn-2.sv:FAIL
+   2) ContAssgn-3/contAssgn-3.sv:FAIL
+   3) ContAssgn-4/contAssgn-4.sv:FAIL
+   4) half-adder/half-adder.sv:FAIL
+
+full-adder: Still producing garbage in the instantiations
+
+Net-9: Why does vper decompile, given that this is an error? Move this to negative testcases
+Net-10: decompiled output from vper does not compile with Cheetah (see cheetahLogonVperGen1)
+Net-11: Why does vper decompile, given that this is an error? Move this to negative testcases
+Net-13: Why does vper decompile, given that this is an error? Move this to negative testcases
+Net-14: decompiled output from vper does not compile with Cheetah (see cheetahLogonVperGen1)
+
+Port-0: Cheetah gives error, while vper does not (See cheetah Error log cheetahLog1)
+
+

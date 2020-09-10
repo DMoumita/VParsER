@@ -1,0 +1,22 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "net-7.sv"
+module m; 
+triand  w1;
+triand signed w7;
+triand  w11[2:0];
+triand signed w9[2:0];
+triand  wm21;
+triand  w211[3:0];
+triand  w4;
+triand  w281[4:0];
+triand  w21[9:3];
+triand signed n1;
+triand signed n2[3:0];
+triand signed n3;
+triand vectored [4:0] n5[2:0];
+triand scalared signed[4:0] nw9[2:0];
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.

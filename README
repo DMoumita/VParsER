@@ -1,0 +1,29 @@
+set VIPER_HOME  -- change ./runRegression file
+set VIPER_REG_HOME  -- change ./runRegression file
+
+TO CREATE EXECUTABLE
+-----------------------
+make clean 
+make purge  #clean all .o files
+make  # create vper executable
+
+TO RUN REGRESSION
+----------------
+
+cd  $VIPER_REG_HOME -- go to regression directory
+./runRegression.sh -all   -- to run and check all the files of all directories
+./runRegression.sh dir1   -- to run and check all the files of dir1 directory
+
+SUPPORT DONE
+-------------
+
+1. Variable declaration as per V2K LRM IEE 1364-2005 Page number : 23
+2. Net declaration as per V2K LRM 1364-2005 Page number :  22
+   
+    Pending support : a) real_number for delay
+                      b) option charge_strength 
+3. always statement
+
+4. Continuous statement 
+                      
+   

@@ -1,0 +1,118 @@
+always-simple-0.sv
+always-simple-1.sv
+always-simple-2.sv
+always-simple-3.sv
+always-simple-4.sv
+always-simple-5.sv
+always-simple-6.sv
+always-simple-7.sv
+always-simple-8.sv
+bit-vector.sv
+4d3
+< [ERR ::SYNTAX] : Line# 12, Col# 5: syntax error ...
+6,7c5,19
+< module main(clock); 
+< ERROR ::clock is not declared as input or output or inout
+---
+> module main(clock);
+> input clock; 
+> reg [2:0] a;
+> reg [2:0] b;
+> always @(posedge clock)
+> begin 
+> a[2] <= b[0];
+> a[1:0]  <= b[2:1] ;
+> b[2:1]  <= a[1:0] ;
+> b[0] <= a[2];
+> 
+> end
+> endmodule 
+> 
+> Compilation complete with 0 warnings and 0 errors.
+contAssgn-0.sv
+contAssgn-1.sv
+contAssgn-2.sv
+contAssgn-3.sv
+contAssgn-4.sv
+contAssgn-5.sv
+int-0.sv
+module-0.sv
+module-1.sv
+module-2.sv
+module-3.sv
+nb0.sv
+nb1.sv
+nb2.sv
+nb3.sv
+nb4.sv
+negInt-0.sv
+negInt-1.sv
+negInt-2.sv
+negNet-0.sv
+negNet-1.sv
+negNet-2.sv
+negReal-0.sv
+negReal-1.sv
+negReal-2.sv
+negRealtime-0.sv
+negRealtime-1.sv
+negRealtime-2.sv
+negReg-0.sv
+negReg-1.sv
+negReg-2.sv
+negTime-0.sv
+negTime-1.sv
+negTime-2.sv
+net-0.sv
+net-1.sv
+net-10.sv
+net-11.sv
+net-12.sv
+net-13.sv
+net-14.sv
+net-2.sv
+net-3.sv
+net-4.sv
+net-5.sv
+net-6.sv
+net-7.sv
+net-8.sv
+net-9.sv
+port-0.sv
+port-1.sv
+port-2.sv
+port-3.sv
+real-0.sv
+realtime-0.sv
+reg-0.sv
+time-0.sv
+full-adder.sv
+6,9c6,9
+< input in_x;
+< input in_y;
+< output out_sum;
+< output out_carry;
+---
+> input   in_x;
+> input   in_y;
+> output   out_sum;
+> output   out_carry;
+15,19c15,19
+< input in_x;
+< input in_y;
+< input carry_in;
+< output sum_out;
+< output carry_out;
+---
+> input   in_x;
+> input   in_y;
+> input   carry_in;
+> output   sum_out;
+> output   carry_out;
+24,25c24,25
+< u1_half_adder half_adder(.in_x(0x7ffff3658a80), .in_y(0x7ffff3658c00), .out_sum(0x7ffff3658dc0), .out_carry(0x7ffff3658f00));
+< u2_half_adder half_adder(.in_x(0x7ffff3659240), .in_y(0x7ffff36593b0), .out_sum(0x7ffff3659570), .out_carry(0x7ffff36596b0));
+---
+> half_adder u1_half_adder(.in_x(in_x),.in_y(in_y),.out_sum(w_sum1),.out_carry(w_carry1));
+> half_adder u2_half_adder(.in_x(w_sum1),.in_y(carry_in),.out_sum(sum_out),.out_carry(w_carry2));
+half-adder.sv

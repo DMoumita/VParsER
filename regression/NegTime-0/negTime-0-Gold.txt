@@ -1,0 +1,9 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+[ERR ::SYNTAX] : Line# 4, Col# 13: syntax error ...
+//# File = "negTime-0.sv"
+module M; 
+endmodule
+
+Compilation complete with 0 warnings and 1 errors.

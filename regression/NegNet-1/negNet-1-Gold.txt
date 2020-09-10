@@ -1,0 +1,9 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+[ERR ::SYNTAX] : Line# 4, Col# 17: syntax error ...
+//# File = "negNet-1.sv"
+module m; 
+endmodule
+
+Compilation complete with 0 warnings and 1 errors.

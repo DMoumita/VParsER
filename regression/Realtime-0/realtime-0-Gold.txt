@@ -1,0 +1,18 @@
+                System Verilog Parser                     
+                Ver : v0.1.01
+
+//# File = "realtime-0.sv"
+module M; 
+realtime  a;
+realtime  b;
+realtime  x = 1;
+realtime  y = 2;
+realtime  x1[1:0];
+realtime  y1[2:1];
+realtime  xx1[1:0];
+realtime  yy1;
+realtime  z1[3:0];
+realtime  p = 2;
+endmodule
+
+Compilation complete with 0 warnings and 0 errors.
