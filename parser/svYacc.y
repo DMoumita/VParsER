@@ -31,6 +31,7 @@
 #include <svContAssign.h>
 #include <svNonBlkAssignExpr.h>
 #include <svMinTypMax.h>
+#include <svRangeExpr.h>
 
 using namespace std;
 
@@ -82,6 +83,8 @@ extern svFile& LexFile;  // The corresponding file object under parse
 
 %token                              AT
 %token                              COLON
+%token                              Key_PLUSCOLON
+%token                              Key_MINUSCOLON
 %token                              COMMA
 %token                              DOT
 %token                              EQ_CASE
@@ -1392,8 +1395,23 @@ exprVar : NUMBER
         ;
 
 optBitSel : { $<expr>$ = NULL; }
-          | LBRACK cExpression RBRACK { $<expr>$ = $<expr>2; }
-          ;
+          | LBRACK cExpression RBRACK 
+          {  
+              $<expr>$ = new svRangeExpr($<expr>2, NULL, NOTSET); 
+          }
+          | LBRACK cExpression COLON cExpression  RBRACK 
+          { 
+              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, ONLYCOLON); 
+          }
+          | LBRACK cExpression Key_PLUSCOLON cExpression  RBRACK 
+          { 
+              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, PLUSCOLON); 
+          }
+          | LBRACK cExpression Key_MINUSCOLON cExpression  RBRACK 
+          { 
+              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, MINUSCOLON); 
+          }
+ ;
 
 //----------------------------------------------------------------------------
 // Identifiers

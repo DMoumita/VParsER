@@ -148,6 +148,8 @@ highz0                              { updateCoord(); return Key_HIGHZ0;    }
 highz1                              { updateCoord(); return Key_HIGHZ1;    }
 vectored                            { updateCoord(); return VECTORED;    }
 scalared                            { updateCoord(); return SCALARED;    }
+\+:                                  { updateCoord(); return Key_PLUSCOLON; }
+\-:                                  { updateCoord(); return Key_MINUSCOLON;}
 
 {ident}                             { updateCoord(); yylval.name = new string(yytext); return IDENTIFIER;         }
 
