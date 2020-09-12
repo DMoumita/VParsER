@@ -2,18 +2,21 @@
                 Ver : v0.1.01
 
 //# File = "bit-vector.sv"
-module main(clock);
-input clock; 
+module main(clock); 
+input clock;
 reg [2:0] a;
 reg [2:0] b;
 always @(posedge clock)
-begin 
+begin
 a[2] <= b[0];
-a[1:0]  <= b[2:1] ;
-b[2:1]  <= a[1:0] ;
+
+a[1:0] <= b[2:1];
+
+b[2:1] <= a[1:0];
+
 b[0] <= a[2];
 
 end
-endmodule 
+endmodule
 
 Compilation complete with 0 warnings and 0 errors.
