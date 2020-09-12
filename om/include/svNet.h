@@ -11,7 +11,7 @@ class svNet : public svDeclBase
        typedef std::map<svDriveStrengthType, std::string> tdriveMap;
        static tOpMap opMap_;
        static tdriveMap driveStrengthMap_;
-       svDriveStrengthType _strengthItem0;
+       svDriveStrengthType _strengthItem0 ;
        svDriveStrengthType _strengthItem1;
        bool isVector_;
        bool isScalar_;

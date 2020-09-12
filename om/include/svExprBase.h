@@ -13,7 +13,7 @@ using namespace std;
 class svExprBase : public svBase
 {
     public:
-       enum eExprType {UNDEF, VAR, CONST, SELECT, COMBO, ASSIGN, INSTANCE, OP, CONTASSIGN, NONBLKASSIGN, MINTYPMAX};
+       enum eExprType {UNDEF, VAR, CONST, SELECT, COMBO, ASSIGN, INSTANCE, OP, CONTASSIGN, NONBLKASSIGN, MINTYPMAX, RANGEEXPR};
        typedef std::vector<svExprBase*> TChildList;
 
     private:

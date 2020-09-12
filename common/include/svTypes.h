@@ -57,3 +57,10 @@ typedef enum {
 	IMPLICIT_PORT
 } ePortType;
 
+
+typedef enum {
+	NOTSET,
+	ONLYCOLON,
+	PLUSCOLON,
+	MINUSCOLON,
+} rangeExprType;

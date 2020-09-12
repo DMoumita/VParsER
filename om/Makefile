@@ -25,7 +25,8 @@ SRCS =  src/svBase.cpp        \
 	src/svReal.cpp \
 	src/svRealTime.cpp \
 	src/svTime.cpp \
-	src/svMinTypMax.cpp 
+	src/svMinTypMax.cpp \
+	src/svRangeExpr.cpp \
 
 OBJS = $(SRCS:%.cpp=%.o)
 
