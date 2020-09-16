@@ -32,8 +32,11 @@
 #include <svNonBlkAssignExpr.h>
 #include <svMinTypMax.h>
 #include <svRangeExpr.h>
+#include<svGlobals.h>
 
 using namespace std;
+double gLineNo;
+double gColNo;
 
 extern char*                        yytext;
 extern double                       yyColNo, yylineno;
@@ -1397,19 +1400,27 @@ exprVar : NUMBER
 optBitSel : { $<expr>$ = NULL; }
           | LBRACK cExpression RBRACK 
           {  
-              $<expr>$ = new svRangeExpr($<expr>2, NULL, NOTSET); 
+              $<expr>$ = new svRangeExpr($<expr>2, NULL, NOTSET);
+              gLineNo = yylineno;
+              gColNo = yyColNo;
           }
           | LBRACK cExpression COLON cExpression  RBRACK 
           { 
-              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, ONLYCOLON); 
+              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, ONLYCOLON);
+              gLineNo = yylineno;
+              gColNo = yyColNo;
           }
           | LBRACK cExpression Key_PLUSCOLON cExpression  RBRACK 
           { 
-              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, PLUSCOLON); 
+              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, PLUSCOLON);
+              gLineNo = yylineno;
+              gColNo = yyColNo;
           }
           | LBRACK cExpression Key_MINUSCOLON cExpression  RBRACK 
           { 
-              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, MINUSCOLON); 
+              $<expr>$ = new svRangeExpr($<expr>2, $<expr>4, MINUSCOLON);
+              gLineNo = yylineno;
+              gColNo = yyColNo;
           }
  ;
 

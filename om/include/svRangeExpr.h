@@ -5,6 +5,7 @@
 
 #include <svExprBase.h>
 #include <svTypes.h>
+#include<svGlobals.h>
 
 class svRangeExpr : public svExprBase
 {

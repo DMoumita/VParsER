@@ -5,7 +5,17 @@ svRangeExpr::svRangeExpr( svExprBase* l , svExprBase* r, const rangeExprType rt)
     , lRange(l)
     , rRange(r)
     , rType(rt)
-{ }
+{ 
+if ( rType == PLUSCOLON || rType == MINUSCOLON)
+{
+	if (rRange->getExprType() == CONST) {
+	   if(rRange->toInt() == 0) {
+               cout << "Error :: Line No : "<< gLineNo<<" , Col No : " <<gColNo<<" :: Width must be a postive integer !"<<std::endl;
+	       exit(1);
+           }
+	}
+}
+}
 
 void svRangeExpr::decompile(std::ostream& os) const
 {
